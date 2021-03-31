@@ -22,11 +22,11 @@ int main(int ac, char **av)
       return (EXIT_FAILURE);
   }
 
-  /* Test `sha256()` */
+  /* Test `sha_hash_gen()` */
   test_ptr = sha_hash_gen(SHA1, av[1]);
   if (!test_ptr)
   {
-      fprintf(stderr, "sha256() failed\n");
+      fprintf(stderr, "sha() failed\n");
       return (EXIT_FAILURE);
   }
 
